@@ -9,12 +9,19 @@
 import Foundation
 
 public struct AdConfiguration {
-  /// The format of the ad (e.g., interstitial, rewarded).
-  let format: AdFormat
+    /// The format of the ad (e.g., interstitial, rewarded).
+    public let format: AdFormat
 
-  /// The Ad Unit ID provided by the ad network.
-  let unitId: String
+    /// The Ad Unit ID provided by the ad network.
+    public let unitId: String
 
-  /// The number of ads to cache for this configuration.
-  let numOfAds: Int
+    /// The number of ads to cache for this configuration.
+    public let numOfAds: Int
+
+    /// Initializer for AdConfiguration.
+    public init(format: AdFormat, unitId: String, numOfAds: Int) {
+        self.format = format
+        self.unitId = unitId
+        self.numOfAds = numOfAds
+    }
 }
