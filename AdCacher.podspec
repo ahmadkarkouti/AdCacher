@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'AdCacher'
-  spec.version      = '1.0.1' # Update as needed
+  spec.version      = '1.0.2' # Update as needed
   spec.summary      = 'A caching utility for Google Mobile Ads.'
   spec.description  = <<-DESC
     AdCacher provides an easy way to manage and cache Google Mobile Ads.
